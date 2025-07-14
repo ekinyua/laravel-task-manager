@@ -46,7 +46,7 @@ class TaskManager extends Component
 
         $this->resetForm();
         $this->loadData();
-        session()->flash('message', 'Task created and email sent.');
+        session()->flash('message', 'Task created.');
     }
 
     public function editTask($id)
