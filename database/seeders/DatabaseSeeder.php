@@ -20,12 +20,12 @@ class DatabaseSeeder extends Seeder
         // User::factory(10)->create();
 
         // Create roles
-        $admin = Role::create(['name' => 'admin']);
-        $user = Role::create(['name' => 'user']);
+        // $admin = Role::create(['name' => 'admin']);
+        // $user = Role::create(['name' => 'user']);
 
-        // Create permissions
-        Permission::create(['name' => 'manage users']);
-        Permission::create(['name' => 'manage tasks']);
+        // // Create permissions
+        // Permission::create(['name' => 'manage users']);
+        // Permission::create(['name' => 'manage tasks']);
 
         // Creating Users
         $userOne = User::create([
