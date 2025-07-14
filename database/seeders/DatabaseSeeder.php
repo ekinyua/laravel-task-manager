@@ -28,13 +28,13 @@ class DatabaseSeeder extends Seeder
         Permission::create(['name' => 'manage tasks']);
 
         // Creating Users
-        $userOne = User::factory()->create([
+        $userOne = User::create([
             'name' => 'Test User',
             'email' => 'test@example.com',
             'password'=> Hash::make("Password"),
         ]);
 
-        $adminOne = User::factory()->create([
+        $adminOne = User::create([
             'name' => 'Admin User',
             'email' => 'admintest@example.com',
             'password'=> Hash::make("Password"),
