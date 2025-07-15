@@ -42,11 +42,11 @@ class TaskManager extends Component
         ]);
 
         // send email
-        // Mail::to($task->user->email)->send(new TaskAssigned($task));
+        Mail::to($task->user->email)->send(new TaskAssigned($task));
 
         $this->resetForm();
         $this->loadData();
-        session()->flash('message', 'Task created.');
+        session()->flash('message', 'Task created and email sent.');
     }
 
     public function editTask($id)
